@@ -27,3 +27,6 @@ Open the website and see article teasers that are styled using component library
 
 - To build your own components and variations, add them at `/admin/structure/component-library-pattern`
 - Then map them to a view mode using layout builder and `component_blocks`.
+
+## Screenshot
+![](/home/heddn/Sites/component_library/docs/assets/article-teaser.png "asset teaser")
