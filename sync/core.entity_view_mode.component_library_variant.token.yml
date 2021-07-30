@@ -1,0 +1,10 @@
+uuid: afb3bec1-e7d0-423d-bf60-80ea64288237
+langcode: en
+status: true
+dependencies:
+  module:
+    - component_library
+id: component_library_variant.token
+label: Token
+targetEntityType: component_library_variant
+cache: true

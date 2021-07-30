@@ -1,0 +1,17 @@
+uuid: 9c7ceb43-f06b-4bdf-a230-b87c379f4f5e
+langcode: en
+status: true
+dependencies: {  }
+id: article_teaser
+label: 'Article Teaser'
+data: |-
+  title: Proin in diam non nisl imperdiet sodales a ut sem
+  body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut purus risus, blandit vitae lorem eu, vulputate dignissim nisi. Fusce pellentesque erat felis, sed aliquam turpis placerat a. Quisque massa nibh, fermentum in tortor sit amet, hendrerit tincidunt massa. Ut finibus, felis quis feugiat posuere, diam tellus consequat purus, quis venenatis mauris erat sit amet risus. Vestibulum quis nunc eget massa porttitor efficitur. Nunc placerat vestibulum sem fringilla malesuada. Donec at sapien vitae augue auctor auctor. Nulla id arcu sed nibh faucibus elementum vel quis libero. Proin ut condimentum diam.
+  url: https://www.example.com
+  image: https://placekitten.com/1200/800
+  tags: Apples, bananas, oranges
+  created_day: 11
+  created_month_year: Feb, 2021
+description: ''
+tags:
+  - Content

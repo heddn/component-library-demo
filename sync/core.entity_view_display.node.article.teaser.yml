@@ -1,0 +1,135 @@
+uuid: 5f074519-7f73-417e-89d4-22c9d305e5d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.article.body
+    - field.field.node.article.comment
+    - field.field.node.article.field_image
+    - field.field.node.article.field_tags
+    - image.style.medium
+    - node.type.article
+  module:
+    - component_blocks
+    - image
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          79d52bda-dcb1-464b-bc66-378990b895ea:
+            uuid: 79d52bda-dcb1-464b-bc66-378990b895ea
+            region: content
+            configuration:
+              id: 'component_blocks:node:article_teaser'
+              label: 'Article Teaser with fields from Content'
+              provider: component_blocks
+              label_display: '0'
+              variant: article_teaser_default
+              variables:
+                title:
+                  source: title
+                  value: ''
+                  label: ''
+                  type: string
+                  settings:
+                    link_to_entity: true
+                body:
+                  source: body
+                  value: ''
+                  label: ''
+                  type: text_trimmed
+                  settings:
+                    trim_length: 200
+                url:
+                  source: __fixed
+                  value: '[node:url]'
+                  label: ''
+                image:
+                  source: field_image
+                  value: ''
+                  label: ''
+                  type: image
+                  settings:
+                    image_style: ''
+                    image_link: ''
+                tags:
+                  source: field_tags
+                  value: ''
+                  label: ''
+                  type: entity_reference_label
+                  settings:
+                    link: false
+                created_day:
+                  source: created
+                  value: ''
+                  label: ''
+                  type: timestamp
+                  settings:
+                    date_format: custom
+                    custom_date_format: d
+                    timezone: ''
+                created_month_year:
+                  source: created
+                  value: ''
+                  label: ''
+                  type: timestamp
+                  settings:
+                    date_format: custom
+                    custom_date_format: 'F, Y'
+                    timezone: ''
+              settings: null
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+_core:
+  default_config_hash: 4NcL2hSQZBpJbYtNuh5jC6kyQTcAc1m5bQpTegEWEso
+id: node.article.teaser
+targetEntityType: node
+bundle: article
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    weight: 0
+    region: content
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    label: hidden
+  field_image:
+    type: image
+    weight: -1
+    region: content
+    settings:
+      image_style: medium
+      image_link: content
+    third_party_settings: {  }
+    label: hidden
+  field_tags:
+    type: entity_reference_label
+    weight: 10
+    region: content
+    settings:
+      link: true
+    third_party_settings: {  }
+    label: above
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  comment: true

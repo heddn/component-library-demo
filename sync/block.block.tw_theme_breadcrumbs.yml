@@ -1,0 +1,22 @@
+uuid: 04d2d570-6f93-4c02-8085-1d1327ca3b74
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tw_theme
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: tw_theme_breadcrumbs
+theme: tw_theme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }
