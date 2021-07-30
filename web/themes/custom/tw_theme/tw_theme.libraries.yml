@@ -1,0 +1,12 @@
+global-styling:
+  css:
+    theme:
+      build/app.css: {}
+  dependencies:
+    - tw_theme/alpine
+messages:
+  js:
+    js/messages.js: {}
+alpine:
+  js:
+    /libraries/alpine/dist/alpine.js: {}

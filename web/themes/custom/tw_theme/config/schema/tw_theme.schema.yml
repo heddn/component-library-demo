@@ -1,0 +1,3 @@
+tw_theme.settings:
+  type: theme_settings
+  label: 'TailWind theme settings'

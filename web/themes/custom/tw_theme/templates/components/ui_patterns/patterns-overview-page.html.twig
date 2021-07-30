@@ -1,0 +1,44 @@
+{#
+/**
+ * @file
+ * UI Pattern library page template.
+ */
+#}
+{% if patterns is not empty %}
+
+  <h2>{{ "Available patterns"|t }}</h2>
+
+  {% for pattern_name, pattern in patterns %}
+
+    <details class="border-uh-secondary border-2 mb-2">
+      <summary class="cursor-pointer bg-uh-secondary p-2">{{ pattern.label }}</summary>
+
+      <div class="p-4">
+
+        <div class="mb-2"><span class="font-semibold">ID:</span> {{ pattern.id }}</div>
+        <div class="mb-6">
+          {{ pattern.meta }}
+        </div>
+
+        <h3>{{ 'Variants'|t }}</h3>
+        <div class="sdivide-y-4">
+          {% for variant in pattern.rendered %}
+            <div class="mb-2">
+              <h4>{{ variant.meta['#variant'].label }}</h4>
+              <div class="mb-2"><span class="font-semibold">ID:</span> {{ variant.meta['#variant'].name }}</div>
+              <div class="visually-hidden">{{ 'Preview'|t }}</div>
+              <div class="bg-white ring-4">
+                {{ variant.pattern }}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+
+      </div>
+    </details>
+  {% endfor %}
+
+{% endif %}
+
+
+

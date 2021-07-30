@@ -1,0 +1,26 @@
+{#
+/**
+ * @file
+ * UI Pattern library standalone page.
+ */
+#}
+{% if pattern is not empty %}
+  <div class="">
+    {{ pattern.meta }}
+
+    <div class="text-align-left text-sm">{{ 'Preview'|t }}</div>
+
+    {% for variant in pattern.rendered %}
+      <div class="mb-2">
+        <div class="mb-2">
+          {{ variant.meta }}
+        </div>
+        <div class="text-align-left text-sm">{{ 'Preview'|t }}</div>
+        <div class="bg-white ring-4">
+          {{ variant.pattern }}
+        </div>
+      </div>
+    {% endfor %}
+
+  </div>
+{% endif %}

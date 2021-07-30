@@ -1,0 +1,13 @@
+{#
+/**
+ * @file
+ * Theme override for a marker for new or updated content.
+ */
+#}
+{% if logged_in %}
+  {% if status is constant('MARK_NEW') %}
+    <span class="text-branding-orange">{{ 'New'|t }}</span>
+  {% elseif status is constant('MARK_UPDATED') %}
+    <span class="text-branding-orange">{{ 'Updated'|t }}</span>
+  {% endif %}
+{% endif %}

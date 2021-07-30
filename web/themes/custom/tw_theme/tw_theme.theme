@@ -1,0 +1,37 @@
+<?php // phpcs:ignore Drupal.Commenting.FileComment.Missing
+
+declare(strict_types=1);
+
+/**
+ * @file
+ * Functions to support theming in the tailwind theme.
+ */
+
+use Drupal\Core\Template\Attribute;
+
+/**
+ * Implements hook_preprocess().
+ */
+function tw_themepreprocess_page(array &$variables): void {
+  $route_name = \Drupal::routeMatch()->getRouteName();
+
+  $fixed_width_routes = [
+    'ui_patterns.patterns.overview',
+    'ui_patterns.patterns.single',
+    'filter.tips_all',
+    'user.login',
+    'user.register',
+    'user.pass',
+  ];
+
+  $variables['main_attributes'] = new Attribute();
+  if (\in_array($route_name, $fixed_width_routes, TRUE)) {
+    $variables['main_attributes']->addClass('max-w-screen-xl mx-auto');
+  }
+}
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function tw_themepreprocess_input__submit(array &$variables): void {
+  $variables['label'] = $variables['element']['#value'];
+}

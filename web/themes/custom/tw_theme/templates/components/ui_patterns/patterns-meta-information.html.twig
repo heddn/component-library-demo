@@ -1,0 +1,34 @@
+{#
+/**
+ * @file
+ * UI Pattern meta information.
+ */
+#}
+{% if pattern is not empty %}
+
+  {% if pattern.description %}
+    <p><span>{{ 'Description'|t }}</span>: {{ pattern.description }}</p>
+  {% endif %}
+
+  {# Pattern fields descriptions. #}
+  <table class="min-w-full divide-y divide-gray-200 border border-b-2">
+    <caption class="text-align-left text-md font-bold">{{ 'Meta information'|t }}</caption>
+    <thead class="bg-gray-100">
+      <tr>
+        {% set th_class = 'px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider' %}
+        <th class="{{ th_class }}">{{ "Field"|t }}</th>
+        <th class="{{ th_class }}">{{ "Label"|t }}</th>
+      </tr>
+    </thead>
+    <tbody class="bg-white divide-y divide-gray-200">
+    {% set td_class = 'px-4 py-2 text-sm text-gray-500' %}
+    {% for field in pattern.fields %}
+      <tr>
+        <td class="{{ td_class }}">{{ field.name }}</td>
+        <td class="{{ td_class }}">{{ field.label }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+
+{% endif %}
