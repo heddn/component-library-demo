@@ -16,6 +16,9 @@ with [tailwind](https://tailwindcss.com/).
 - `composer install`
 - `composer si`
 - `drush genc --bundles=article 10 0`
+- `cd web/themes/custom/tw_theme`
+- `yarn install`
+- `yarn build-dev`
 - `drush uli`
 
 Open the website and see article teasers that are styled using component library
