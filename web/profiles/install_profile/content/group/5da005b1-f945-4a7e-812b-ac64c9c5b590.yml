@@ -1,0 +1,50 @@
+_meta:
+  version: '1.0'
+  entity_type: group
+  uuid: 5da005b1-f945-4a7e-812b-ac64c9c5b590
+  bundle: site
+  default_langcode: en
+  depends:
+    c732ee9c-c818-4faa-8bcd-1c3ef8b006ff: media
+    73894914-f5bf-405e-8843-2338ff6b01d1: taxonomy_term
+default:
+  revision_user:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  label:
+    -
+      value: Strawberries
+  created:
+    -
+      value: 1628619695
+  path:
+    -
+      alias: ''
+      langcode: en
+  revision_translation_affected:
+    -
+      value: true
+  library_collection:
+    -
+      target_id: standard_collection
+  field_description:
+    -
+      value: "<p>The red fruit that tastes great.</p>\r\n"
+      format: basic_html
+  field_link:
+    -
+      uri: 'https://www.example.com'
+      title: 'Click me'
+      options: {  }
+  field_media:
+    -
+      entity: c732ee9c-c818-4faa-8bcd-1c3ef8b006ff
+  field_tags:
+    -
+      entity: 73894914-f5bf-405e-8843-2338ff6b01d1

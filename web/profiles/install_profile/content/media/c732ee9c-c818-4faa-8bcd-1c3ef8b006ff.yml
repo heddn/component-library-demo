@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: c732ee9c-c818-4faa-8bcd-1c3ef8b006ff
+  bundle: image
+  default_langcode: en
+  depends:
+    9ffee77e-faaa-479c-b5aa-1263580aa1cc: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: zaib-tse-KVv5lFOMY1E-unsplash.jpg
+  created:
+    -
+      value: 1628619701
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_media_image:
+    -
+      entity: 9ffee77e-faaa-479c-b5aa-1263580aa1cc
+      alt: Strawberries
+      title: ''
+      width: 3024
+      height: 4032

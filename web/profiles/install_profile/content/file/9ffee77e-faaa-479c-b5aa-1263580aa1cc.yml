@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 9ffee77e-faaa-479c-b5aa-1263580aa1cc
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: zaib-tse-KVv5lFOMY1E-unsplash.jpg
+  uri:
+    -
+      value: 'public://2021-08/zaib-tse-KVv5lFOMY1E-unsplash_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 2371822
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1628619701

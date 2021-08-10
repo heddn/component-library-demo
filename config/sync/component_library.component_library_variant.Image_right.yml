@@ -4,8 +4,8 @@ status: true
 dependencies:
   config:
     - component_library.component_library_pattern.teaser
-id: graphic_right
-label: 'Graphic Right'
+id: Image_right
+label: 'Image Right'
 template: |-
   <div class="grid grid-cols-12 gap-4 mb-10 flex flex-wrap content-teaser">
       {% if image %}

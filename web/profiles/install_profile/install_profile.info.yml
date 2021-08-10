@@ -10,3 +10,20 @@ install:
   - dynamic_page_cache
 themes:
   - stark
+default_content:
+  file:
+    - 2be68b80-f771-4671-93a4-b687a8af4e14
+    - 9ffee77e-faaa-479c-b5aa-1263580aa1cc
+  group:
+    - 5da005b1-f945-4a7e-812b-ac64c9c5b590
+    - 5107149b-2003-40a2-ba8f-bdc7ee5a954f
+  group_content:
+    - 9699b9a3-0229-41f4-a13d-65a28aaa2b82
+  media:
+    - 116f9610-dd39-4f33-98cf-1d262e3fce56
+    - c732ee9c-c818-4faa-8bcd-1c3ef8b006ff
+  node:
+    - 5e5a15df-d8e8-4fc6-93bb-32aab5ccda12
+  taxonomy_term:
+    - 73894914-f5bf-405e-8843-2338ff6b01d1
+    - 5bffdc72-59b2-4c3e-be4a-0066584d5e77

@@ -1,0 +1,50 @@
+_meta:
+  version: '1.0'
+  entity_type: group
+  uuid: 5107149b-2003-40a2-ba8f-bdc7ee5a954f
+  bundle: site
+  default_langcode: en
+  depends:
+    116f9610-dd39-4f33-98cf-1d262e3fce56: media
+    5bffdc72-59b2-4c3e-be4a-0066584d5e77: taxonomy_term
+default:
+  revision_user:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  label:
+    -
+      value: 'Salad greens'
+  created:
+    -
+      value: 1628619824
+  path:
+    -
+      alias: ''
+      langcode: en
+  revision_translation_affected:
+    -
+      value: true
+  library_collection:
+    -
+      target_id: standard_collection
+  field_description:
+    -
+      value: "<p>The crunch of green that tastes like butter.</p>\r\n"
+      format: basic_html
+  field_link:
+    -
+      uri: 'https://example.com'
+      title: ''
+      options: {  }
+  field_media:
+    -
+      entity: 116f9610-dd39-4f33-98cf-1d262e3fce56
+  field_tags:
+    -
+      entity: 5bffdc72-59b2-4c3e-be4a-0066584d5e77

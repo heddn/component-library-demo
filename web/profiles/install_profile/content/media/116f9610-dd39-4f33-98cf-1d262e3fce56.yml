@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 116f9610-dd39-4f33-98cf-1d262e3fce56
+  bundle: image
+  default_langcode: en
+  depends:
+    2be68b80-f771-4671-93a4-b687a8af4e14: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: pina-messina-Oc3fP0FXJbU-unsplash.jpg
+  created:
+    -
+      value: 1628619830
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  field_media_image:
+    -
+      entity: 2be68b80-f771-4671-93a4-b687a8af4e14
+      alt: 'Salad greens'
+      title: ''
+      width: 2867
+      height: 3629

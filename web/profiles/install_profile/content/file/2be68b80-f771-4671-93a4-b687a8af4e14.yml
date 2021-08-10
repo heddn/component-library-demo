@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 2be68b80-f771-4671-93a4-b687a8af4e14
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: pina-messina-Oc3fP0FXJbU-unsplash.jpg
+  uri:
+    -
+      value: 'public://2021-08/pina-messina-Oc3fP0FXJbU-unsplash_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 1262530
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1628619830

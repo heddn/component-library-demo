@@ -18,6 +18,7 @@
         "drupal/core-composer-scaffold": "^9.2",
         "drupal/core-project-message": "^9.2",
         "drupal/core-recommended": "^9.2",
+        "drupal/default_content": "^2@alpha",
         "drupal/devel": "^4.1",
         "drupal/gin": "@alpha",
         "drupal/gin_toolbar": "@alpha",

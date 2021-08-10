@@ -1,0 +1,40 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 5e5a15df-d8e8-4fc6-93bb-32aab5ccda12
+  bundle: article
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'About Us'
+  created:
+    -
+      value: 1628619983
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  body:
+    -
+      value: "<p>More about us goes here.</p>\r\n"
+      format: basic_html
+      summary: ''

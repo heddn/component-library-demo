@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: group_content
+  uuid: 9699b9a3-0229-41f4-a13d-65a28aaa2b82
+  bundle: site-group_node-article
+  default_langcode: en
+  depends:
+    5da005b1-f945-4a7e-812b-ac64c9c5b590: group
+    5e5a15df-d8e8-4fc6-93bb-32aab5ccda12: node
+default:
+  uid:
+    -
+      target_id: 1
+  gid:
+    -
+      entity: 5da005b1-f945-4a7e-812b-ac64c9c5b590
+  entity_id:
+    -
+      entity: 5e5a15df-d8e8-4fc6-93bb-32aab5ccda12
+  label:
+    -
+      value: 'About Us'
+  created:
+    -
+      value: 1628619998
+  path:
+    -
+      alias: ''
+      langcode: en

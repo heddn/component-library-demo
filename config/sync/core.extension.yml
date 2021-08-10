@@ -9,11 +9,9 @@ module:
   ckeditor: 0
   codemirror_editor: 0
   color: 0
-  comment: 0
   component_blocks: 0
   component_library: 0
   config: 0
-  contact: 0
   contextual: 0
   datetime: 0
   dblog: 0
@@ -27,6 +25,7 @@ module:
   filter: 0
   gcomponent_library: 0
   gin_toolbar: 0
+  gnode: 0
   group: 0
   group_content_menu: 0
   help: 0
