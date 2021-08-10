@@ -1,0 +1,7 @@
+{
+  "patches": {
+    "drupal/component_library": {
+      "Group integration": "https://www.drupal.org/files/issues/2021-08-10/3226813-5.patch"
+    }
+  }
+}

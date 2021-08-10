@@ -1,0 +1,153 @@
+uuid: 19edff66-b6e0-4576-9b4f-27845418f685
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.group.teaser
+    - field.field.group.site.field_description
+    - field.field.group.site.field_link
+    - field.field.group.site.field_media
+    - field.field.group.site.field_tags
+    - group.type.site
+  module:
+    - component_blocks
+    - layout_builder
+    - layout_discovery
+    - link
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          f4b8b874-5c22-4851-a2e4-ff1e78e890f9:
+            uuid: f4b8b874-5c22-4851-a2e4-ff1e78e890f9
+            region: content
+            configuration:
+              id: 'component_blocks:group:teaser'
+              label: 'Teaser with fields from Group'
+              provider: component_blocks
+              label_display: '0'
+              variant: teaser_default
+              variables:
+                title:
+                  source: label
+                  value: ''
+                  label: ''
+                  type: string
+                  settings:
+                    link_to_entity: true
+                body:
+                  source: field_description
+                  value: ''
+                  label: ''
+                  type: text_trimmed
+                  settings:
+                    trim_length: 300
+                url:
+                  source: field_link
+                  value: ''
+                  label: ''
+                  type: link
+                  settings:
+                    trim_length: null
+                    url_only: true
+                    url_plain: true
+                    rel: nofollow
+                    target: _blank
+                image:
+                  source: field_media
+                  value: ''
+                  label: ''
+                  type: entity_reference_entity_view
+                  settings:
+                    view_mode: default
+                tags:
+                  source: field_tags
+                  value: ''
+                  label: ''
+                  type: entity_reference_label
+                  settings:
+                    link: true
+                created_day:
+                  source: created
+                  value: ''
+                  label: ''
+                  type: timestamp
+                  settings:
+                    date_format: custom
+                    custom_date_format: j
+                    timezone: ''
+                created_month_year:
+                  source: created
+                  value: ''
+                  label: ''
+                  type: timestamp
+                  settings:
+                    date_format: custom
+                    custom_date_format: 'F Y'
+                    timezone: ''
+              settings: null
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: group.site.teaser
+targetEntityType: group
+bundle: site
+mode: teaser
+content:
+  field_description:
+    weight: -4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_link:
+    weight: -1
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_media:
+    type: entity_reference_entity_view
+    weight: -2
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_tags:
+    weight: -3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  label:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  changed: true
+  created: true
+  uid: true

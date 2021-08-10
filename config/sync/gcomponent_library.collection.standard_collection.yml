@@ -1,0 +1,12 @@
+uuid: 34502314-9f90-4e4a-a6e8-44da220045a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - component_library.component_library_variant.teaser_default
+id: standard_collection
+label: 'Standard collection'
+description: ''
+weight: 0
+styles:
+  teaser: teaser_default

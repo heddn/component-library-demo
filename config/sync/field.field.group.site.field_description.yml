@@ -1,0 +1,21 @@
+uuid: 2819f2d2-7385-4c77-8ccd-194ae6a0815c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_description
+    - group.type.site
+  module:
+    - text
+id: group.site.field_description
+field_name: field_description
+entity_type: group
+bundle: site
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
