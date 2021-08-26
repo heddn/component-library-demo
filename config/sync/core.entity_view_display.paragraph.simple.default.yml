@@ -1,0 +1,57 @@
+uuid: 0d673d9d-5d66-44bf-a2c8-5f3f50f52c14
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.simple.field_background
+    - field.field.paragraph.simple.field_text
+    - paragraphs.paragraphs_type.simple
+  module:
+    - component_blocks
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          1e26d4b4-d53e-4c18-b63a-70a08d128ab9:
+            uuid: 1e26d4b4-d53e-4c18-b63a-70a08d128ab9
+            region: content
+            configuration:
+              id: 'component_blocks:paragraph:simple'
+              label: 'Simple with fields from Paragraph'
+              provider: component_blocks
+              label_display: '0'
+              variant: simple_default
+              variables:
+                color:
+                  source: field_background
+                  value: ''
+                  label: ''
+                  type: list_key
+                text:
+                  source: field_text
+                  value: ''
+                  label: ''
+                  type: text_default
+              settings: null
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: paragraph.simple.default
+targetEntityType: paragraph
+bundle: simple
+mode: default
+content: {  }
+hidden:
+  field_background: true
+  field_text: true

@@ -1,0 +1,18 @@
+uuid: d529e2ac-4dfc-429e-9f91-3e2a01311939
+langcode: en
+status: true
+dependencies:
+  config:
+    - component_library.component_library_pattern.columns
+id: columns_rounded_corners
+label: 'Rounded Corners'
+template: |-
+  <div class="py-6 bg-{{ color }} flex rounded-lg">
+    {% for key, column in columns|filter((column, key) => key|first != "#") %}
+      <div class="flex-1">
+        {{ column }}
+      </div>
+    {% endfor %}
+  </div>
+description: null
+pattern: columns

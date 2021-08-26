@@ -1,0 +1,10 @@
+uuid: d58c8812-91a5-4655-b5c6-2941a2c48a1f
+langcode: en
+status: true
+dependencies: {  }
+id: columns_three
+label: 'Columns Three'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

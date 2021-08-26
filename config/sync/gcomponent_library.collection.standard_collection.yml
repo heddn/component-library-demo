@@ -3,10 +3,16 @@ langcode: en
 status: true
 dependencies:
   config:
+    - component_library.component_library_variant.columns_default
+    - component_library.component_library_variant.columns_three_default
+    - component_library.component_library_variant.simple_default
     - component_library.component_library_variant.teaser_default
 id: standard_collection
 label: 'Standard collection'
 description: ''
 weight: 0
 styles:
+  columns: columns_default
+  columns_three: columns_three_default
+  simple: simple_default
   teaser: teaser_default

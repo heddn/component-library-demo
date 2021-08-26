@@ -1,0 +1,59 @@
+uuid: fe389724-bd83-4ed8-9bc5-a5083c64cf23
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.columns.field_background
+    - field.field.paragraph.columns.field_paragraphs
+    - paragraphs.paragraphs_type.columns
+  module:
+    - component_blocks
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          a42415f5-e9f2-4de5-8991-cd255fe73343:
+            uuid: a42415f5-e9f2-4de5-8991-cd255fe73343
+            region: content
+            configuration:
+              id: 'component_blocks:paragraph:columns'
+              label: 'Columns with fields from Paragraph'
+              provider: component_blocks
+              label_display: '0'
+              variant: columns_default
+              variables:
+                color:
+                  source: field_background
+                  value: ''
+                  label: ''
+                  type: list_key
+                columns:
+                  source: field_paragraphs
+                  value: ''
+                  label: ''
+                  type: entity_reference_revisions_entity_view
+                  settings:
+                    view_mode: default
+              settings: null
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: paragraph.columns.default
+targetEntityType: paragraph
+bundle: columns
+mode: default
+content: {  }
+hidden:
+  field_background: true
+  field_paragraphs: true

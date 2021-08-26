@@ -1,0 +1,17 @@
+uuid: c5e733b6-cc7b-487c-9988-893916a8cc29
+langcode: en
+status: true
+dependencies: {  }
+id: columns_three
+label: 'Columns Three'
+data: |
+  color: branding-warning-dark
+  columns:
+    - Text column 1
+    - Text column 2
+    - |
+      Text column 3
+      because this has more lines
+      this one is a maybe a little bigger
+description: ''
+tags: {  }

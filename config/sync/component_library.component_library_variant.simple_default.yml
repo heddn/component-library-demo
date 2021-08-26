@@ -1,0 +1,22 @@
+uuid: 3ce7ba5c-2836-4696-a5e3-7640c171bf33
+langcode: en
+status: true
+dependencies:
+  config:
+    - component_library.component_library_pattern.simple
+id: simple_default
+label: Default
+template: |-
+  <div class="relative bg-{{ color }}">
+    <div class="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
+      <div class="pr-16 sm:text-center sm:px-16">
+        <p class="font-medium text-white">
+          <span class="block sm:ml-2 sm:inline-block">
+            {{ text }}
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+description: null
+pattern: simple

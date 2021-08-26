@@ -1,0 +1,21 @@
+uuid: bb1eb22a-f121-4164-8139-0232bb323b0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_background
+    - paragraphs.paragraphs_type.columns_three
+  module:
+    - options
+id: paragraph.columns_three.field_background
+field_name: field_background
+entity_type: paragraph
+bundle: columns_three
+label: Background
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

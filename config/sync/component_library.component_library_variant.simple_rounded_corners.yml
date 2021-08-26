@@ -1,0 +1,22 @@
+uuid: e94d6afa-3c56-4b23-80ab-c08a789671c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - component_library.component_library_pattern.simple
+id: simple_rounded_corners
+label: 'Rounded Corners'
+template: |-
+  <div class="relative bg-{{ color }} rounded-lg">
+    <div class="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
+      <div class="pr-16 sm:text-center sm:px-16">
+        <p class="font-medium text-white">
+          <span class="block sm:ml-2 sm:inline-block">
+            {{ text }}
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+description: null
+pattern: simple

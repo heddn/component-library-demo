@@ -1,0 +1,15 @@
+uuid: 1960b0b1-6f38-43b9-9acf-5767fff9bd4f
+langcode: en
+status: true
+dependencies: {  }
+id: columns
+label: Columns
+data: |-
+  color: branding-teal
+  columns:
+    - Column 1
+    - Column 2
+    - Column 3
+    - Column 4
+description: ''
+tags: {  }

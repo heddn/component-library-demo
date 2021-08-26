@@ -1,0 +1,22 @@
+uuid: f2f1065f-e95f-47a6-a53f-d0a76e671c8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.content_type.site-group_node-article
+id: group_content.site-group_node-article.default
+targetEntityType: group_content
+bundle: site-group_node-article
+mode: default
+content:
+  entity_id:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+hidden:
+  uid: true

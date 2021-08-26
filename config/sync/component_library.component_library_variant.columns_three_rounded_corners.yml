@@ -1,0 +1,18 @@
+uuid: 4f79e4be-caba-4889-b5c8-9a3477ba4c3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - component_library.component_library_pattern.columns_three
+id: columns_three_rounded_corners
+label: 'Rounded Corners'
+template: |-
+  <div class="py-6 bg-{{ color }} grid grid-cols-3 gap-4 rounded-lg">
+    {% for key, column in columns|filter((column, key) => key|first != "#") %}
+      <div>
+        {{ column }}
+      </div>
+    {% endfor %}
+  </div>
+description: null
+pattern: columns_three

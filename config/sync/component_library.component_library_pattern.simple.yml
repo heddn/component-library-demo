@@ -1,0 +1,11 @@
+uuid: 51245b5c-93f9-4166-b856-a8b34b738020
+langcode: en
+status: true
+dependencies: {  }
+id: simple
+label: Simple
+data: |-
+  color: branding-orange
+  text: simple text 1
+description: ''
+tags: {  }

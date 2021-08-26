@@ -1,0 +1,18 @@
+uuid: 4fc505d1-ab8a-4814-b75f-c63b86026766
+langcode: en
+status: true
+dependencies:
+  config:
+    - component_library.component_library_pattern.columns
+id: columns_default
+label: Default
+template: |-
+  <div class="py-6 bg-{{ color }} flex">
+    {% for key, column in columns|filter((column, key) => key|first != "#") %}
+      <div class="flex-1">
+        {{ column }}
+      </div>
+    {% endfor %}
+  </div>
+description: null
+pattern: columns

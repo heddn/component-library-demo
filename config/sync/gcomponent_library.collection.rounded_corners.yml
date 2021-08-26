@@ -1,0 +1,18 @@
+uuid: acd095eb-217b-4138-bd2d-7518c7da6005
+langcode: en
+status: true
+dependencies:
+  config:
+    - component_library.component_library_variant.Image_right
+    - component_library.component_library_variant.columns_rounded_corners
+    - component_library.component_library_variant.columns_three_rounded_corners
+    - component_library.component_library_variant.simple_rounded_corners
+id: rounded_corners
+label: 'Rounded Corners'
+description: ''
+weight: 0
+styles:
+  columns: columns_rounded_corners
+  columns_three: columns_three_rounded_corners
+  simple: simple_rounded_corners
+  teaser: Image_right

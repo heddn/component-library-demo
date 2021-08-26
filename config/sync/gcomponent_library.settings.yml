@@ -1,2 +1,5 @@
 override_patterns:
   teaser: teaser
+  columns: columns
+  columns_three: columns_three
+  simple: simple

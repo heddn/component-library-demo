@@ -1,0 +1,37 @@
+uuid: d7155255-cf9e-4787-a60f-bb9b4b535619
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraphs_3
+    - paragraphs.paragraphs_type.columns_three
+    - paragraphs.paragraphs_type.simple
+  module:
+    - entity_reference_revisions
+id: paragraph.columns_three.field_paragraphs_3
+field_name: field_paragraphs_3
+entity_type: paragraph
+bundle: columns_three
+label: Columns
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      simple: simple
+    target_bundles_drag_drop:
+      columns:
+        weight: 4
+        enabled: false
+      columns_three:
+        weight: 5
+        enabled: false
+      simple:
+        enabled: true
+        weight: 6
+field_type: entity_reference_revisions
