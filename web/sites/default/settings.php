@@ -776,6 +776,19 @@ if (file_exists(__DIR__ . '/settings.ddev.php') && getenv('IS_DDEV_PROJECT') == 
  *
  * Keep this code block at the end of this file to take full effect.
  */
+
+$settings['config_exclude_modules'] = [
+  'devel_entity_updates',
+  'devel_generate',
+  'stage_file_proxy',
+  'default_content',
+  'hal',
+  'default_content',
+  'serialization',
+  'config_inspector',
+  'devel',
+];
+
 #
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
